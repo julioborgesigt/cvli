@@ -4,7 +4,7 @@ require('dotenv').config(); // Garante que as variáveis do .env sejam carregada
 module.exports = {
   development: {
     username: process.env.DB_USER,
-    password: process.env.DB_PASSWORD,
+    password: process.env.DB_PASS,
     database: process.env.DB_NAME,
     host: process.env.DB_HOST,
     dialect: process.env.DB_DIALECT || 'mysql',
@@ -18,7 +18,7 @@ module.exports = {
   test: {
     // Configurações para ambiente de teste, se necessário
     username: process.env.DB_USER,
-    password: process.env.DB_PASSWORD,
+    password: process.env.DB_PASS,
     database: process.env.DB_NAME,
     host: process.env.DB_HOST,
     dialect: process.env.DB_DIALECT || 'mysql',
@@ -32,7 +32,7 @@ module.exports = {
   production: {
     // Em produção, você usaria outras variáveis de ambiente
     username: process.env.DB_USER,
-    password: process.env.DB_PASSWORD,
+    password: process.env.DB_PASS,
     database: process.env.DB_NAME,
     host: process.env.DB_HOST,
     dialect: process.env.DB_DIALECT || 'mysql',
